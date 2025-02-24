@@ -7,16 +7,15 @@ import { Component } from '@angular/core';
       <button class="btn-toggle" (click)="toggleDarkMode()">{{ isDarkMode ? '☀️' : '🌙' }}</button>
       <header>
         <div class="hero">
-
           <h1>Vitor de Mello Leite</h1>
           <p>Analista de Sistemas | Segurança da Informação | Desenvolvimento de Software</p>
         </div>
       </header>
 
       <section class="icons">
-        <div class="icon"><img src="assets/code-icon.png" alt="Desenvolvimento" loading="lazy" /><p>Criação de aplicações modernas e responsivas, utilizando tecnologias como Angular e ASP.NET Core.</p></div>
-        <div class="icon"><img src="assets/security-icon.png" alt="Segurança" loading="lazy" /><p>Implementação de medidas para proteger sistemas e redes contra ameaças, garantindo a integridade e confidencialidade dos dados.</p></div>
-        <div class="icon"><img src="assets/system-icon.png" alt="Análise de Sistemas" loading="lazy" /><p>Projetar e otimizar sistemas para melhorar eficiência e desempenho, garantindo soluções escaláveis e seguras.</p></div>
+        <div class="icon"><img src="assets/code-icon.png" alt="Desenvolvimento" /><p>Criação de aplicações modernas e responsivas, utilizando tecnologias como Angular e ASP.NET Core.</p></div>
+        <div class="icon"><img src="assets/security-icon.png" alt="Segurança" /><p>Implementação de medidas para proteger sistemas e redes contra ameaças.</p></div>
+        <div class="icon"><img src="assets/system-icon.png" alt="Análise de Sistemas" /><p>Projetar e otimizar sistemas para melhorar eficiência e segurança.</p></div>
       </section>
 
       <section class="about">
@@ -35,7 +34,7 @@ import { Component } from '@angular/core';
               <p>Sou um profissional de TI com sólida experiência em Análise de Sistemas, Segurança da Informação e Desenvolvimento Web. Minha trajetória inclui o desenvolvimento de soluções robustas e seguras, administração de redes e implementação de políticas de segurança para proteção de dados sensíveis.</p>
               <p>No desenvolvimento, tenho forte domínio em Angular, ASP.NET Core, Python, PHP e JavaScript, trabalhando na construção de aplicações escaláveis e responsivas. Tenho experiência com bancos de dados SQL Server, MySQL e PostgreSQL, garantindo eficiência e segurança na manipulação de dados.</p>
               <p>Na área de segurança da informação, atuo na gestão de firewalls (PFSense, Fortinet), prevenção contra ataques cibernéticos (SIEM, IDS/IPS), VPNs e auditorias de segurança. Possuo conhecimento aprofundado sobre LGPD, ISO 27001 e boas práticas de proteção de dados.</p>
-              <p>Também tenho experiência em infraestrutura de TI, com domínio em **virtualização, redes (TCP/IP, VLAN, roteamento) e computação em nuvem (AWS, Azure). Trabalho na automação de processos e implementação de soluções que otimizam a eficiência operacional.</p>
+              <p>Também tenho experiência em infraestrutura de TI, com domínio em virtualização, redes (TCP/IP, VLAN, roteamento) e computação em nuvem (AWS, Azure). Trabalho na automação de processos e implementação de soluções que otimizam a eficiência operacional.</p>
               <p>Busco constantemente aprimorar minhas habilidades e estou sempre atualizado com as novas tendências tecnológicas para oferecer soluções inovadoras e seguras.</p>
             </div>
             <div class="modal-footer">
@@ -58,7 +57,6 @@ import { Component } from '@angular/core';
   styles: [
     `
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
       .container {
         font-family: 'Roboto', sans-serif;
         text-align: center;
@@ -81,9 +79,6 @@ import { Component } from '@angular/core';
         border-bottom: 1px solid #444;
         border-top: 1px solid #444;
       }
-      .modal-body {
-        color: #ddd;
-      }
       .btn-close {
         filter: invert(1);
       }
@@ -102,14 +97,8 @@ import { Component } from '@angular/core';
         padding: 50px 20px;
         text-align: center;
       }
-      .profile-img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
       .icons {
-        display: flex;
+        display: inline-block;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
