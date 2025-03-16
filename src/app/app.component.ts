@@ -49,7 +49,6 @@ import { Component } from '@angular/core';
           <h2>Conecte-se comigo</h2>
           <a href="https://www.linkedin.com/in/vitor-mello-73884224a/" target="_blank" class="social-btn linkedin">LinkedIn</a>
           <a href="https://github.com/pacote009" target="_blank" class="social-btn github">GitHub</a>
-          <a href="https://instagram.com/seuusuario" target="_blank" class="social-btn instagram">Instagram</a>
         </div>
       </section>
     </div>
@@ -69,6 +68,10 @@ import { Component } from '@angular/core';
         background: #121212;
         color: white;
       }
+      .dark-mode .icon img {
+  filter: invert(1);
+  background: transparent;
+}
       .modal-dark {
         background-color: #1e1e1e !important;
         color: white;
