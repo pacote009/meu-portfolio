@@ -124,8 +124,7 @@ import { Component } from '@angular/core';
         border-radius: 5px;
       }
       .linkedin { background-color: #0073b1; }
-      .github { background-color: #000; }
-      .instagram { background-color: #E4405F; }
+      .github { background-color: #808080; }
       .btn-custom {
         background-color: black !important;
         color: white;
