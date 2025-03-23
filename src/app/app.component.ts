@@ -33,6 +33,13 @@ import { Component, Renderer2 } from '@angular/core';
         <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#aboutModal">Sobre</button>
       </section>
 
+      <section class="projects">
+  <div class="social-links">
+    <h2>Conecte-se comigo</h2>
+    <a href="https://www.linkedin.com/in/vitor-mello-73884224a/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+    <a href="https://github.com/pacote009" target="_blank" class="social-btn github">GitHub</a>
+  </div>
+</section>
       <!-- Modal Sobre -->
       <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
