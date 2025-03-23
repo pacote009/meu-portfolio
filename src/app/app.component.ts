@@ -349,31 +349,38 @@ import { Component, Renderer2 } from '@angular/core';
       .security-column, .development-column {
         border-right: 1px solid rgba(255,255,255,0.1);
       }
-      .header-buttons {
-        bottom: 10px;
-        right: 10px;
-        gap: 15px; /* Aumentei de 8px para 15px no mobile */
-        padding: 0 10px;
-      }
+      .hero {
+    padding: 30px 10px !important;
+    min-height: auto !important;
+  }
+
+
+  .header-buttons {
+    position: static !important;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px !important;
+  }
+
       .container-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-      }
-      .profile-photo {
-        object-position: center 20%; /* Ajuste fino para mobile */
-        width: 180px;
-        height: 200px;
-        margin-top: 10px;
-      }
+    flex-direction: column !important;
+    gap: 20px !important;
+    text-align: center;
+  }
+  .profile-photo {
+    width: 120px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+  }
       .about {
         top: 10px;
         right: 10px;
       }
       .btn-header {
-        padding: 6px 15px;
-        font-size: 14px;
-      }
+    padding: 8px 20px !important;
+    min-width: auto !important;
+    font-size: 14px !important;
+  }
     }
 
     /* Ícones */
